@@ -15,16 +15,16 @@ CREATE TABLE IF NOT EXISTS students (
 
 conn.commit()
 
-# SEED DATA (5 students)
-cursor.execute("SELECT COUNT(*) FROM students")
+
+cursor.execute("SELECT COUNT(*) FROM students")    # Get 5 student data in the beginning
 count = cursor.fetchone()[0]
 
 if count == 0:
     students = [
-        ("Pratham", 21, "CS"),
-        ("Alex", 20, "IT"),
-        ("Sarah", 22, "AI"),
-        ("John", 23, "Math"),
+        ("Pratham", 25, "CS"),
+        ("Sith", 26, "IT"),
+        ("Ram", 23, "AI"),
+        ("Prakash", 23, "Math"),
         ("Maya", 21, "Physics")
     ]
 
